@@ -1,0 +1,10 @@
+# Build results
+bin/
+obj/
+
+# VS Code
+.vscode/
+
+# Publish output
+publish/
+artifacts/

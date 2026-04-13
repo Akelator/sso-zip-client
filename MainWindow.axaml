@@ -1,0 +1,37 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" 
+        d:DesignWidth="420"
+        d:DesignHeight="300"
+        x:Class="ssa_zip_client.MainWindow"
+        Title="ssa-zip"
+        Width="420"
+        Height="300"
+        CanResize="False"
+        Icon="/Assets/app-icon.ico">
+    <StackPanel Margin="20" Spacing="12">
+        <TextBlock Text="SSA ZIP" FontSize="22" FontWeight="Bold" />
+        
+        <TextBlock Text="Directory" />
+        <TextBlock x:Name="baseDirectoryTextBlock"
+                   TextWrapping="Wrap" />
+
+        <TextBlock Text="Password" />
+        <TextBox x:Name="passwordTextBox"
+                 PasswordChar="*"/>
+
+        <StackPanel Orientation="Horizontal" Spacing="12">
+            <Button x:Name="packButton"
+                    Content="Pack"
+                    Width="120" />
+            <Button x:Name="unpackButton"
+                    Content="Unpack"
+                    Width="120" />
+        </StackPanel>
+        <TextBlock x:Name="statusTextBlock"
+                   Text=""
+                   TextWrapping="Wrap" />
+    </StackPanel>
+</Window>
